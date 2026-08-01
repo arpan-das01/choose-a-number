@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    justify-items: center;
+    background-color: #262626;
+    /*border: 1px solid green;*/
+    height: 100dvh;
+    margin: 0;
+}
+h1{
+    align-self: start;
+    margin-top: 7%;
+    
+    
+    /*border: 1px solid red;*/
+    color: white;
+}
+label{
+    color: white;
+    /*border: 1px solid white;*/
+}
+#input-area{
+    align-self: start;
+    display: grid;
+    justify-items: center;
+    gap: 10%;    
+
+    padding: 2%;
+    background-color: #121212;
+    /*border: 1px solid blue;*/
+    border-radius: 10px;
+    
+}
