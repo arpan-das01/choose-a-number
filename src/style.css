@@ -11,8 +11,8 @@ body{
 }
 h1{
     align-self: start;
-    font-size: clamp(2rem, 2.5rem, 3rem);
-    margin-top: 7%;
+    font-size: clamp(2rem, 5.2vw, 3rem);
+    margin-top: 5%;
     
     /*border: 1px solid red;*/
     color: white;
