@@ -21,6 +21,9 @@ label{
     color: white;
     /*border: 1px solid white;*/
 }
+input{
+    min-width: 160px;
+}
 #input-area{
     align-self: start;
     display: grid;
