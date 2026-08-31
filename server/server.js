@@ -21,14 +21,15 @@ const server = createServer((req, res) => {
   .on("end", () =>{
     body = Buffer.concat(body).toString();
     console.log("request stream ended");
-    let numberValue = Number(body);
-    console.log("received a number\nValue:", numberValue);
     
-    if(typeof(numberValue) === "number"){
+    if(typeof(numberValue) === "number" && req.method === "POST"){
+      let numberValue = Number(body);
+      console.log("received a number\nValue:", numberValue);
+
       res.statusCode = 200;
       res.setHeader('Content-Type', 'text/plain');
       res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
-      res.end("received number");
+      res.end("received number\nValue:", numberValue);
     }
   });
 });
